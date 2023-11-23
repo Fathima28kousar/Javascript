@@ -115,16 +115,34 @@ console.log(typeof product);*/
 //     console.log('this is not divisible by 5')
 // }
 
-let num = prompt('Enter the number!')
+// let num = prompt('Enter the number!')
 
-if (num <=100 && num >=90){
-    grade = 'A';
-} else if (num <=89 && num >=70){
-    grade = 'B';
-} else if (num <= 69 && num >=60){
-    grade = 'C';
-}else if (num <= 59 && num >=50){
-    grade = 'D';
-}else grade = 'F';
+// if (num <=100 && num >=90){
+//     grade = 'A';
+// } else if (num <=89 && num >=70){
+//     grade = 'B';
+// } else if (num <= 69 && num >=60){
+//     grade = 'C';
+// }else if (num <= 59 && num >=50){
+//     grade = 'D';
+// }else grade = 'F';
 
-console.log("according to your scores, your grade was: ",grade)
+// console.log("according to your scores, your grade was: ",grade)
+
+
+// let x = 2 + 3 + '5'
+// console.log(x)
+// console.log(typeof x)
+
+// let x = 16 + 'volovo'+12+15+70;
+// console.log(x);
+// console.log(typeof x);
+
+// let x = BigInt('123');
+// console.log(x);
+// console.log(typeof x);
+
+for (let i=1;i<=100;i++){
+    console.log(i%2===0);
+}
+
