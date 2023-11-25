@@ -54,13 +54,13 @@
 // console.log(x)
 // typeof x;
 // console.log(typeof x)
-const student = {
-    fullName : 'fathima',
-    age : 20,
-    cgpa : 22,
-    isPass : true,
+// const student = {
+//     fullName : 'fathima',
+//     age : 20,
+//     cgpa : 22,
+//     isPass : true,
 
-};
+// };
 
 // console.log(student.age)
 // console.log(student['age'])
@@ -141,8 +141,49 @@ console.log(typeof product);*/
 // let x = BigInt('123');
 // console.log(x);
 // console.log(typeof x);
+// for (let i=1;i<=5;i++){
+//     console.log('apna college');
+// }
 
-for (let i=1;i<=100;i++){
-    console.log(i%2===0);
+// let number = 23;
+// let usernum = prompt('Enter the number');
+// while (usernum != number){
+//     usernum = prompt("You Entered a wrong number,Try Again!");
+// }
+// console.log('congratulations, you entered right number');
+
+// let name1 = {
+//     location : "newyork",
+//     city: "america",
+//     number :11
+// };
+
+// console.log('the locatin name is',name1.location,'and the city name',name1.city ,'and the number is',name1.number);
+// let object = `the location name is ${name1.location} and the city names is ${name1.city} and the number is ${name1.number}`
+// console.log(object);
+
+// let str = 'apna college';
+// console.log(str);
+// console.log(str.length);
+// console.log(str.toUpperCase);
+// console.log(str.trim);
+
+// let time = prompt('Enter the hour');
+// if (time <10){
+//     greeting = 'welcome to coding';
+// }else if (time < 20){
+//     greeting = 'this is good';
+// }else {
+//     greeting = 'bye';
+// };
+// console.log(greeting);
+
+let marks = [85,97,44,37,76,60];
+let sum = 0;
+for (let i of marks){
+    
+    sum = sum +i;
 }
+console.log(sum);
+console.log(sum/marks.length);
 
