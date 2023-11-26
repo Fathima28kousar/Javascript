@@ -1,3 +1,5 @@
+
+
 // alert('this is an alert khamoshh!!');
 // console.log('atif aslam');
 // age = 24;
@@ -178,12 +180,40 @@ console.log(typeof product);*/
 // };
 // console.log(greeting);
 
-let marks = [85,97,44,37,76,60];
-let sum = 0;
-for (let i of marks){
+// let marks = [85,97,44,37,76,60];
+// let sum = 0;
+// for (let i of marks){
     
-    sum = sum +i;
-}
-console.log(sum);
-console.log(sum/marks.length);
+//     sum = sum +i;
+// }
+// console.log(sum);
+// console.log(sum/marks.length);
 
+// let price = [250,645,300,900,50];
+// // for (let items of price){
+// //     items =   items - (items*0.1);
+// //     console.log(items);
+
+// for (let i=0;i<price.length;i++){
+//     let offer = price[i]/10;
+//     price[i] = price[i] - offer;
+//     console.log(price[i]);
+// }
+// foodItems = ['litchi','tomato','potato','cauliflower']
+// let added = foodItems.push('optimum');
+
+// console.log(foodItems);
+// let deletedItem = foodItems.pop();
+// console.log(deletedItem);
+// console.log(foodItems);
+
+let arr = ['Bloomberg','Microsoft','Uber','Google','IBM','Netflix'];
+console.log(arr);
+console.log(arr.shift());
+console.log(arr);
+console.log(arr.splice(2,1,'Ola'));
+console.log(arr);
+console.log(arr.push('Amazon'));
+
+let a = prompt('Enter the name:');
+console.log(a);
