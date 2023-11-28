@@ -21,14 +21,15 @@
 // }
 // console.log(countVowels("hello"));
 
-const arrowCount = (sta) => {
-    let count = 0;
-    for (let i of sta) {
-    if (i === "a" || i === "e" || i === "i" || i === "o" || i === "u") {
-      count = count+1;
-    }
-  }
-  return count;
-}
-console.log(arrowCount("hello"));
+// const arrowCount = (sta) => {
+//     let count = 0;
+//     for (let i of sta) {
+//     if (i === "a" || i === "e" || i === "i" || i === "o" || i === "u") {
+//       count = count+1;
+//     }
+//   }
+//   return count;
+// }
+// console.log(arrowCount("hello"));
 
+let arr = [1,2,3,4,5]
