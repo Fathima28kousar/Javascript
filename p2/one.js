@@ -1,4 +1,4 @@
-/*// var prompt = require('prompt-sync')();
+/*//
 
 // function myFunction(msg){
 //     console.log(msg);
@@ -61,22 +61,22 @@ myFunction('this is good',10);*/
 // console.log(sums(2,4));
 // /*function countVowels(sta){
 
- // let count = 0;
- // for (let i of sta){
-  //  if (i=='a'||i=='e'||i=='i'||i=='o'||i=='u'){
-  //    count = count+1
-  //  }
- // }return count;
+// let count = 0;
+// for (let i of sta){
+//  if (i=='a'||i=='e'||i=='i'||i=='o'||i=='u'){
+//    count = count+1
+//  }
+// }return count;
 //}
 //console.log(countVowels('this is a mango and this is a star'));
 
 //const arrowCount = (sta) =>{
-	//let count = 0;
-	//for (let i of sta){
-	//	if(i=='a'||i=='e'||i=='o'||i=='u'){
-	//	 count++
-	//	}
-	//}return count;
+//let count = 0;
+//for (let i of sta){
+//	if(i=='a'||i=='e'||i=='o'||i=='u'){
+//	 count++
+//	}
+//}return count;
 //}
 //console.log(arrowCount('hello'));*/ //
 
@@ -90,14 +90,43 @@ myFunction('this is good',10);*/
 //   console.log(num)
 // });
 
-let arrs = [22,33,44];
-// let newArr = arrs.map((arr) => {
-//   return arr;
+// var ename='Rahul Gandhi';
+// console.log(ename);
+
+// function wish(){
+//   console.log('good morning');
+// }
+// wish();
+// let a = 101;
+// let b = 102;
+// // document.write(a+b);
+// console.log(a+b);
+// console.log('good afternoon');
+
+// let arr = [1,2,3,4,1000];
+
+// const output = arr.reduce((prev,cur) => {
+//   return prev>cur ? prev:cur;
+// });
+
+// console.log(output);
+
+// let arr1 = [40,50,87,99,97,100];
+// let newArr = arr1.filter((val) => {
+//   return val>90;
 // })
 // console.log(newArr);
+var prompt = require('prompt-sync')();
 
-let newOrr = arrs.filter((val) => {
-  return val>40;
-});
-console.log(newOrr);
+let num = prompt("Enter the number: ");
+let list = [];
+for(let i=0;i<=num;i++){
+    list[i-1] = i;
+}
+console.log(list);
+
+let newArr = list.reduce((prev,curr) => {
+  return prev*curr;
+})
+console.log(newArr);
 
