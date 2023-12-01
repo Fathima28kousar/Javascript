@@ -116,17 +116,22 @@ myFunction('this is good',10);*/
 //   return val>90;
 // })
 // console.log(newArr);
-var prompt = require('prompt-sync')();
+// var prompt = require('prompt-sync')();
 
-let num = prompt("Enter the number: ");
-let list = [];
-for(let i=0;i<=num;i++){
-    list[i-1] = i;
-}
-console.log(list);
+// let num = prompt("Enter the number: ");
+// let list = [];
+// for(let i=0;i<=num;i++){
+//     list[i-1] = i;
+// }
+// console.log(list);
 
-let newArr = list.reduce((prev,curr) => {
-  return prev*curr;
-})
-console.log(newArr);
+// let newArr = list.reduce((prev,curr) => {
+//   return prev*curr;
+// })
+// console.log(newArr);
 
+let emp = {};
+let user = {
+  uname:'Rahul Gandhi',
+  uemail:'rahulgandhi@gmail.com'
+};

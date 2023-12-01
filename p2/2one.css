@@ -5,6 +5,55 @@
 }
 
 .container-fluid{
-    
-    background-color: aqua;
+    height: 200px;
+    background-color: #00a884;
+    min-width: 100%;
 }
+
+.header{
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+    padding-top: 20px;
+    width: 100%;
+    
+}
+
+img {
+    width: 100px;
+    margin-right: -20px;
+}
+
+h5 {
+    color: white;
+    
+}
+
+.container {
+    height: 900px;
+    width :1000px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Ccontainer {
+    background-color: blue;
+    height:90%;
+    width:90%;
+    display: flex;
+    
+}
+
+.col-8 {
+    background-color:aqua;
+    padding-top: 100px;
+    padding-left: 80px;
+}
+
+.col-8 p {
+    margin-left: -25px;
+}
+
+
