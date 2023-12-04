@@ -1,3 +1,4 @@
+var prompt = require('prompt-sync')();
 //38*******************************************
 // i = 1;
 // while(i<=10){
@@ -119,4 +120,50 @@
 //     i++;
 // }
 //58*******************************************
-console.log('good morning');
+// let num = prompt('Enter any number: ');
+// let i = 1;
+// while (i<num){
+//     if(num%i === 0){
+//         console.log(i);
+//     }
+//     i++;
+// }
+//59*******************************************
+// let num = prompt("Enter any number: ");
+// let reverse_number = 0;
+// while(num>0){
+//     remainder = num%10;
+//     reverse_number = (reverse_number *10) + remainder;
+//     num = Math.floor(num/10);
+    
+// }
+// console.log(reverse_number);
+//60*******************************************
+// let arr = [1,2,3,4,5,6,7,8,10,11,13,16,14,18];
+// let list = []
+// for (let i of arr){
+//     if(i%2==0){
+//         console.log(i);
+//         if (list.length === 5) {
+            
+//             break;
+//         }
+//         list.push(i); 
+//     };
+// }
+// console.log(list);
+let list = [];
+
+for (let i = 0; i < 5; i++) {
+    let num = parseInt(prompt(`Enter number ${i + 1}: `), 10);
+    // list.push(num);
+    if(num%2==0){
+        list.push(num);
+    }
+}
+// let evenNumbers = list.filter(num => num % 2 === 0);
+
+console.log("Entered numbers:", list);
+// console.log("Even numbers:", evenNumbers);
+
+
