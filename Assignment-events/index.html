@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
 </head>
-<body onload="updatePage()">
-    <p id="abc"></p>
-    <script src="one.js" type="text/javascript" ></script>
+
+<body>
+    <button onClick="getdata()" >Test</button>
+    <button id="abc" onmouseover="change_color()" style="background-color:red;">Mouse over</button>
+    <br><br><br><br>
+    <button id="xyz" onmouseout="changeColor()" style="background-color:red;">Mouse Out</button>
+    <br><br><br><br>
+    <button id="onclick" onclick="onClick()" style="background-color:red;">On Click</button>
+    <br><br><br><br>
+    <button id="double" ondblclick="onDouble()" style="background-color:red;">On Double Click</button>
+    <br><br><br><br>
+    <form >
+        
+       OnFocus:<input id="onfocus" type="text"  onfocus="onFocus()" />  <br/><br/>
+       Blur Ex:<input id="blur"   type="text" onblur="change_Color_blur()"/> <br/><br/>
+       Case: <input id="Case"  type="text" onblur="change_Case()"/>  <br/><br/>
+    </form> 
+    <script src="one.js" type="text/javascript"></script>
 </body>
+
 </html>
