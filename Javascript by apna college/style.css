@@ -1,11 +1,8 @@
+.content {
 
-div {
-    height :100px;
-    width :100px;
-    border : 2px solid black ;
-    background-color :aqua;
-    margin : 20px;
-    display : flex;
-    justify-content: center;
-    align-items: center;
+    color : brown;
+}
+
+.newClass {
+    background-color :cadetblue
 }
