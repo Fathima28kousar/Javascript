@@ -70,3 +70,52 @@
 // let data = [1,2,3];
 // console.log(data.unshift(4));
 // console.log(data);
+// 14*1516**********************************************
+// 17***********************************************
+// let cards = ['ace','king','joker','seven'];
+// var shoe = [].concat(cards);
+// console.log(shoe,cards);
+// shoe[0] = 'I changed';
+// console.log(shoe,cards);
+// 18***********************************************
+/*let name1 = ['Rahul','Sonia','Priyanka'];
+let a = name1.indexOf('Rahul');
+console.log(a);*/
+// 19***********************************************
+// let name1 = ['Rahul','Sonia','Priyanka'];
+// let a = name1.indexOf('Gandhi');
+// console.log(a);
+// 20***********************************************
+
+// let arrays = [
+//     {id:101,name:'fathima',sal:45000},
+//     {id:102,name:'kousar',sal:55000},
+//     {id:103,name:'lubna',sal:65000}
+// ]
+// for(array of arrays){
+//     console.log(array);
+// }
+// Input array contain some elements.
+// let array = [10, 20, 30, 40, 50];
+// let found = array.find(function (element) {
+// 	return element > 40;
+// });
+// console.log(found);
+// Sample array of objects
+const myArray = [
+    { id: 1, name: 'John' },
+    { id: 2, name: 'Jane' },
+    { id: 3, name: 'Doe' }
+  ];
+  
+  // Function to find the index of an object with a specific property value
+  function findIndexByProperty(array, propertyName, value) {
+    return array.findIndex(item => item[propertyName] === value);
+  }
+  
+  // Example usage
+  const index = findIndexByProperty(myArray, 'id', 2);
+  console.log(index);
+  
+
+  
