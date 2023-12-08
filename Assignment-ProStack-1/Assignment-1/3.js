@@ -139,31 +139,40 @@ var prompt = require('prompt-sync')();
 // }
 // console.log(reverse_number);
 //60*******************************************
-// let arr = [1,2,3,4,5,6,7,8,10,11,13,16,14,18];
-// let list = []
-// for (let i of arr){
-//     if(i%2==0){
-//         console.log(i);
-//         if (list.length === 5) {
-            
-//             break;
-//         }
-//         list.push(i); 
-//     };
+// let list = [];
+// for (let i = 0; i < 5; i++) {
+//     let num = parseInt(prompt(`Enter number ${i + 1}: `), 10);
+//     // list.push(num);
+//     if(num%2==0){
+//         list.push(num);
+//     }
 // }
-// console.log(list);
-let list = [];
-
-for (let i = 0; i < 5; i++) {
-    let num = parseInt(prompt(`Enter number ${i + 1}: `), 10);
-    // list.push(num);
-    if(num%2==0){
-        list.push(num);
-    }
+// console.log("Even numbers:", list);
+//61*******************************************
+/*const number = parseInt(prompt('Enter the number of terms: '));
+let n1 = 0, n2 = 1, nextTerm;
+console.log('Fibonacci Series:');
+for (let i = 1; i <= number; i++) {
+    console.log(n1);
+    nextTerm = n1 + n2;
+    n1 = n2;
+    n2 = nextTerm;
 }
-// let evenNumbers = list.filter(num => num % 2 === 0);
+*/
+//62*******************************************
+// let num = parseInt(prompt("Enter a number: "));
+// let sum = 0;
+// let temp = num
+// while(temp>0){
+//     let digit = temp%10;
+//     sum = sum + digit **3;
+//     temp = Math.floor(temp/10);
+// }
+// if(num===sum){
+//     console.log(num,"is an Armstrong number")
+// }
+// else{
+//     console.log(num,"is not an armstrong number")
+// }
 
-console.log("Entered numbers:", list);
-// console.log("Even numbers:", evenNumbers);
-
-
+// 6 questions left
