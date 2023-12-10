@@ -32,4 +32,25 @@ if (x>30){
 }else{
     console.log('x is not greater');
 }*/
+// function add(){
+//     console.log('addition');
+// }
+// add();
+// add();
 
+// let a = 10;
+// let add = () => {
+//     console.log('additon');
+// }
+// add();
+// add();
+
+/*function add(a,b){
+    console.log(a+b);
+}
+add(10,30);
+
+let Add = (a,b) => {
+    console.log(a+b);
+}
+Add(10,40);*/
