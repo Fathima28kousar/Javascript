@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem;
+    
+}
+
+.calculator {
+    background-color: blue;
+    height: 50vh;
+    width: 25vw;
+    border: none;
+    border-radius: 0.5rem;
+    
+}
+
+input {
+    height: 7vmin;
+    width: 11vmin;
+    margin: 0.1vmin;
+    padding: 15px;
+}
