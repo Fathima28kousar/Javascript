@@ -21,3 +21,34 @@
 //     }
 // }
 
+// const employee = {
+//     calcTax() {
+//         console.log('tax rate is 10%');
+//     },
+// };
+
+// const karanArjun = {
+//     salary : 50000,
+//     calcTax() {
+//         console.log('tax rate is 20%');
+//     }
+// }
+// karanArjun.__proto__=employee;
+class ToyotaCar {
+    constructor(){
+        console.log('creating new object');
+    }
+    start() {
+        console.log('start');
+    }
+    stop() {
+        console.log('stop');
+    }
+    setBrand(brand) {
+        this.brandName = brand;
+    }
+}
+let fortuner = new ToyotaCar();
+fortuner.setBrand('fortuner')
+let lexus = new ToyotaCar();
+
