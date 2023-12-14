@@ -1,5 +1,8 @@
 let changeImage2String= ()=>{
     let fileImage=document.getElementById('file1').files[0];
+    // console.log(fileImage.name);
+    // console.log(fileImage.size);
+    // console.log(fileImage.type);
 
    var reader=new FileReader();
     reader.readAsDataURL(fileImage)

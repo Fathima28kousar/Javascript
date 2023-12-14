@@ -207,13 +207,22 @@ console.log(typeof product);*/
 // console.log(deletedItem);
 // console.log(foodItems);
 
-let arr = ['Bloomberg','Microsoft','Uber','Google','IBM','Netflix'];
-console.log(arr);
-console.log(arr.shift());
-console.log(arr);
-console.log(arr.splice(2,1,'Ola'));
-console.log(arr);
-console.log(arr.push('Amazon'));
+function removeLastCharacter() {
+    const inputElement = document.getElementById('exampleInput');
 
-let a = prompt('Enter the name:');
-console.log(a);
+    // Get the current value of the input
+    let currentValue = inputElement.value;
+
+    // Check if the string is not empty
+    if (currentValue.length > 0) {
+        // Remove the last character using slice
+        currentValue = currentValue.slice(0, -1);
+
+        // Update the input with the modified value
+        inputElement.value = currentValue;
+
+        console.log('Removed last character. New value:', currentValue);
+    } else {
+        console.log('String is already empty.');
+    }
+}

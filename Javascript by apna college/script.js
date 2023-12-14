@@ -34,21 +34,26 @@
 //     }
 // }
 // karanArjun.__proto__=employee;
-class ToyotaCar {
-    constructor(){
-        console.log('creating new object');
+
+let DATA = 'this is secret information';
+class User{
+    constructor(name,email){
+        this.name = name;
+        this.email = email
     }
-    start() {
-        console.log('start');
-    }
-    stop() {
-        console.log('stop');
-    }
-    setBrand(brand) {
-        this.brandName = brand;
+    viewData() {
+        console.log('data',DATA);
     }
 }
-let fortuner = new ToyotaCar();
-fortuner.setBrand('fortuner')
-let lexus = new ToyotaCar();
+
+class Admin extends User{
+    editData(){
+        console.log('edit data');
+    }
+}
+
+let student1 = new User('fathima','fathima@gmail.com');
+let student2 = new User('kousar','kousar@gmail.com');
+
+let teacher1 = new User('Dean','Dean@gmail.com');
 
