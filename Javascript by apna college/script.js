@@ -35,25 +35,48 @@
 // }
 // karanArjun.__proto__=employee;
 
-let DATA = 'this is secret information';
-class User{
-    constructor(name,email){
+class Parent {
+    constructor(name) {
+        console.log('enter parent constructor');
         this.name = name;
-        this.email = email
+          // Assuming you want to set the name property
+        this.species = 'homosapiens';
     }
-    viewData() {
-        console.log('data',DATA);
+
+    eat() {
+        console.log('person eats');
+    }
+
+    sleep() {
+        console.log('person takes rest');
+    }
+
+    work() {
+        console.log('works hard');
     }
 }
 
-class Admin extends User{
-    editData(){
-        console.log('edit data');
+class Engineer extends Parent {
+    constructor(name) {
+        console.log('enter child constructor');
+        super(name);  // Pass the name parameter to the Parent constructor
+        this.branch = branch;
+        this.name = name;
+        console.log('exit child constructor');
+    }
+
+    work() {
+        console.log('builds projects');
     }
 }
 
-let student1 = new User('fathima','fathima@gmail.com');
-let student2 = new User('kousar','kousar@gmail.com');
+class Doctor extends Parent {
+    work() {
+        console.log('Treats patients');
+    }    
+}
 
-let teacher1 = new User('Dean','Dean@gmail.com');
+let obj = new Engineer('John Doe', 'chemical engineering');
+
+
 
