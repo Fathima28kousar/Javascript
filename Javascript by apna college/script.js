@@ -35,48 +35,7 @@
 // }
 // karanArjun.__proto__=employee;
 
-class Parent {
-    constructor(name) {
-        console.log('enter parent constructor');
-        this.name = name;
-          // Assuming you want to set the name property
-        this.species = 'homosapiens';
-    }
-
-    eat() {
-        console.log('person eats');
-    }
-
-    sleep() {
-        console.log('person takes rest');
-    }
-
-    work() {
-        console.log('works hard');
-    }
+async function hello(){
+    console.log('hello this is fathima');
 }
-
-class Engineer extends Parent {
-    constructor(name) {
-        console.log('enter child constructor');
-        super(name);  // Pass the name parameter to the Parent constructor
-        this.branch = branch;
-        this.name = name;
-        console.log('exit child constructor');
-    }
-
-    work() {
-        console.log('builds projects');
-    }
-}
-
-class Doctor extends Parent {
-    work() {
-        console.log('Treats patients');
-    }    
-}
-
-let obj = new Engineer('John Doe', 'chemical engineering');
-
-
 
