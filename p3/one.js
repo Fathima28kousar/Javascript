@@ -63,3 +63,19 @@
 //     asyncFunc2().then((res)=>{});
 // })
 
+
+function getData(dataId){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log('data',dataId);
+            resolve(200);
+        },1000);    
+    })
+}
+
+(async function(){
+    console.log('getting data1..........');
+    await getData(1);
+    console.log('getting data2..........');
+    await getData(2)
+})();
