@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.to-do-app{
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.to-do-app img{
+    width: 40px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    
+}
