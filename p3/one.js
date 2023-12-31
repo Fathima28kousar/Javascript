@@ -64,18 +64,28 @@
 // })
 
 
-function getData(dataId){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            console.log('data',dataId);
-            resolve(200);
-        },1000);    
-    })
-}
+// function getData(dataId){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log('data',dataId);
+//             resolve(200);
+//         },1000);    
+//     })
+// }
 
-(async function(){
-    console.log('getting data1..........');
-    await getData(1);
-    console.log('getting data2..........');
-    await getData(2)
-})();
+// (async function(){
+//     console.log('getting data1..........');
+//     await getData(1);
+//     console.log('getting data2..........');
+//     await getData(2)
+// })();
+
+// window.onstorage = (e) =>{
+//     alert("Changed");
+//     console.log(e);
+// }
+let text = "The best things in life are free";
+let pattern = /e/;
+let result = pattern.test(text);
+
+document.getElementById("demo").innerHTML = result;
