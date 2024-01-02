@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "js-image-zoom": "^0.7.0",
     "prompt-sync": "^4.2.0"
   }
 }

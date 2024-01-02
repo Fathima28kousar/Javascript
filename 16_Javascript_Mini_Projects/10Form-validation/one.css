@@ -20,8 +20,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    width: 100vw;
-    
+    width: 100vw;   
 }
 
 .container {
@@ -31,8 +30,6 @@ body {
     overflow: hidden;
     width: calc(100vw - 65vw);
     max-width: 100%;
-    
-    
 }
 
 .header {
@@ -141,6 +138,4 @@ body {
         width:calc(100vw - 35vw);
         max-width: 100%;
     }
-
-
 }

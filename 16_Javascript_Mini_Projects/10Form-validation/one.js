@@ -5,13 +5,14 @@ const phone = document.getElementById("phone");
 const password = document.getElementById("password");
 const cpassword = document.getElementById("cpassword");
 
-
 // addEvent
 form.addEventListener("submit",(event)=>{
     event.preventDefault();
     validate();
 })
-const sendData = (usernameVal,sRate, count) =>{
+
+// alert
+const sendData = (usernameVal,sRate,count) =>{
     if(sRate === count){
         alert("Registration Successfull");
         swal("Welcome! " +usernameVal, "Registration Successful", "success");
@@ -19,16 +20,14 @@ const sendData = (usernameVal,sRate, count) =>{
     }
 }
 
-
 // for final validation
-
 const successMsg = (usernameVal) => {
     let formCon = document.getElementsByClassName("form-control");
     let count = formCon.length - 1;
     for(let i = 0; i < formCon.length; i++){
         if(formCon[i].className === "form-control success"){
             let sRate = 0 + i;
-            console.log(sRate);
+            // console.log(sRate);
             sendData(usernameVal, sRate, count);
         }else {
             return false;
@@ -37,7 +36,6 @@ const successMsg = (usernameVal) => {
 }
 
 // more email validation
-
 const isEmail = (emailVal) => {
     let atSymbol = emailVal.indexOf("@");
     if(atSymbol < 1) return false;
@@ -46,7 +44,6 @@ const isEmail = (emailVal) => {
     if(dot === emailVal.length - 1) return false;
     return true;
 }
-
 
 // define validation function
 const validate = () =>{
@@ -64,6 +61,7 @@ const validate = () =>{
     }else {
         setSuccessMsg(username);
     }
+
     // validate email
     if(emailVal ===""){
         setErrorMsg(email, 'email cannot be blank');
@@ -91,7 +89,6 @@ const validate = () =>{
         setSuccessMsg(password);
     }
 
-
      // validate cpassword
     if(cpasswordVal ===""){
         setErrorMsg(cpassword, 'confirm password cannot be blank');
@@ -104,16 +101,16 @@ const validate = () =>{
 }
 
 
-    function setErrorMsg(input,errormsgs){
-        const formControl = input.parentElement;
-        const small = formControl.querySelector("small");
-        formControl.className = "form-control error";
-        small.innerText = errormsgs;
-    }
+function setErrorMsg(input,errormsgs){
+    const formControl = input.parentElement;
+    const small = formControl.querySelector("small");
+    formControl.className = "form-control error"; 
+    small.innerText = errormsgs;
+}
 
-    // no message is shown
-    function setSuccessMsg(input){
-        const formControl = input.parentElement;
-        formControl.className = "form-control success";
-    }
+// no message is shown
+function setSuccessMsg(input){
+    const formControl = input.parentElement;
+    formControl.className = "form-control success";
+}
 
