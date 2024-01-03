@@ -1,0 +1,75 @@
+FIRST EXAMPLE
+properties
+const rows = table.rows; // HTMLCollection of all rows
+const cells = tr.cells; // HTMLCollection of all cells in a row
+const sectionRowIndex = tr.sectionRowIndex; // Row index within the section
+const rowIndex = tr.rowIndex; // Row index within the entire table
+const cellIndex = td.cellIndex; // Cell index within the row
+
+methods
+const newRow = table.insertRow(1); // Insert a new row at index 1
+table.deleteRow(1); // Delete the row at index 1
+const newCell = tr.insertCell(0); // Insert a new cell at index 0
+tr.deleteCell(0); // Delete the cell at index 0
+
+example
+const table = document.querySelector('.table');
+
+// Accessing rows and cells
+const rows = table.rows;
+const firstRow = rows[0];
+const cellsInFirstRow = firstRow.cells;
+
+// Accessing properties
+const rowIndex = firstRow.rowIndex;
+const cellIndex = cellsInFirstRow[0].cellIndex;
+const sectionRowIndex = firstRow.sectionRowIndex;
+
+// Modifying the table
+const newRow = table.insertRow(1);
+const newCell = newRow.insertCell(0);
+newCell.textContent = 'New Cell';
+
+// Deleting a row and cell
+table.deleteRow(2);
+firstRow.deleteCell(1);
+
+*****************************************************************************************
+
+SECOND EXAMPLE
+// example
+const table = document.querySelector('.table');
+
+const rows = table.rows; // HTMLCollection of all rows
+const caption = table.caption; // Caption element
+const tHead = table.tHead; // Thead element
+const tFoot = table.tFoot; // Tfoot element
+const tBodies = table.tBodies; // HTMLCollection of tbody elements
+
+// methods
+const newCaption = table.createCaption(); // Create and get the new caption element
+table.deleteCaption(); // Remove the caption element
+const newTHead = table.createTHead(); // Create and get the new thead element
+table.deleteTHead(); // Remove the thead element
+const newTFoot = table.createTFoot(); // Create and get the new tfoot element
+table.deleteTFoot(); // Remove the tfoot element
+const newTBody = table.createTBody(); // Create and get the new tbody element
+table.deleteTBody(); // Remove the tbody element(s)
+
+
+// Deleting existing elements
+table.deleteCaption();
+table.deleteTHead();
+table.deleteTFoot();
+table.deleteTBody();
+
+*****************************************************************************************
+
+THIRD EXAMPLE
+let t = document.body.firstElementChild.firstElementChild;
+console.log(t);
+console.log(t.rows);
+console.log(t.caption);
+console.log(t.tHead.firstElementChild);
+console.log(t.tFoot);
+console.log(t.tBodies);
