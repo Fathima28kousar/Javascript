@@ -71,3 +71,18 @@ label.validation-error{
 .hide{
     display:none;
 }
+
+
+@media(max-width:580px){
+    .employee-form {
+        border-style: solid;
+        padding: 10px;
+        margin: auto;
+        width: 70%;
+    }
+    .employees-table {
+        overflow-x: auto;
+        padding: 0;
+        width: 90%;
+    }
+}
