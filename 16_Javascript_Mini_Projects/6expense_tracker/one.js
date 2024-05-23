@@ -64,6 +64,7 @@ function loadItems(e, i) {
 	cell1.innerHTML = e.name; 
 	cell2.innerHTML = e.amount; 
 	c4.innerHTML = "☒"; 
+	c4.style.cursor = "pointer"; 
 	c4.classList.add("zoom"); 
 	c4.addEventListener("click", () => del(e)); 
 	if (e.type == 0) { 
