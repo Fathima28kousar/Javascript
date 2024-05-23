@@ -1,24 +1,19 @@
-let changeImage2String= ()=>{
-    let fileImage=document.getElementById('file1').files[0];
-    // console.log(fileImage.name);
-    // console.log(fileImage.size);
-    // console.log(fileImage.type);
+document.getElementById('file1').addEventListener('change', changeImage2String);
 
-   var reader=new FileReader();
-    reader.readAsDataURL(fileImage)
-    reader.addEventListener("load",()=>{
-        document.getElementById("abc").innerHTML=reader.result
-      
-    })
-    //document.getElementById("abc").innerHTML="dummmyString"
-    return false;
+function changeImage2String() {
+    let fileImage = document.getElementById('file1').files[0];
+    
+    if (fileImage) {
+        let reader = new FileReader();
+        reader.readAsDataURL(fileImage);
+        reader.addEventListener("load", () => {
+            document.getElementById("abc").innerText = reader.result;
+        });
+    }
 }
 
-
-let str2image=()=>{
-
-    let imgstr = document.getElementById('abc').innerHTML
-    var img2 = document.getElementById("img2");
-    img2.src = imgstr
-
+function str2image() {
+    let imgstr = document.getElementById('abc').innerText;
+    let img2 = document.getElementById("img1");
+    img2.src = imgstr;
 }
