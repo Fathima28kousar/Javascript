@@ -1,4 +1,4 @@
-const BASE_URL = "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies";
+const BASE_URL = "https://open.er-api.com/v6/latest";
 
 const dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("form button");
@@ -6,12 +6,8 @@ const fromCurr = document.querySelector(".from select");
 const toCurr = document.querySelector(".to select");
 const msg = document.querySelector(".msg");
 
-// for (code in countryList) {
-//     console.log(code, countryList[code]);
-// }
-
 for (let select of dropdowns){
-    for (currCode in countryList){
+    for (let currCode in countryList){
         let newOption = document.createElement("option");
         newOption.innerText = currCode;
         newOption.value = currCode;
@@ -29,9 +25,7 @@ for (let select of dropdowns){
 }
 
 const updateFlag = (element) =>{
-    // console.log(element);
     let currCode = element.value;
-    // console.log(currCode);
     let countryCode = countryList[currCode];
     let newSrc = `https://flagsapi.com/${countryCode}/flat/64.png`;
     let img = element.parentElement.querySelector("img");
@@ -43,25 +37,20 @@ btn.addEventListener("click", async (evt) => {
     updateExchangeRate();
 })
 
-const updateExchangeRate = async ()=>{
+const updateExchangeRate = async () => {
     let amount = document.querySelector(".amount input");
     let amtVal = amount.value;
-    // console.log(amtVal);
-    if (amtVal === "" || amtVal < 1){
-        amtVal =1;
+    if (amtVal === "" || amtVal < 1) {
+        amtVal = 1;
         amount.value = "1";
     }
 
-    // console.log(fromCurr.value, toCurr.value);
-    const URL = `${BASE_URL}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
+    const URL = `${BASE_URL}/${fromCurr.value}`;
     let response = await fetch(URL);
     let data = await response.json();
-    // console.log(data);
-    let rate = data[toCurr.value.toLowerCase()];
-    // console.log(rate);
-
+    let rate = data.rates[toCurr.value];
     let finalAmount = amtVal * rate;
-    msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
+    msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount.toFixed(2)} ${toCurr.value}`;
 }
 
 window.addEventListener("load", ()=>{
