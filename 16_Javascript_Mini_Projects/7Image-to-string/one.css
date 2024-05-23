@@ -37,6 +37,10 @@ h1{
     overflow-x: hidden;
 }
 
+#displayText{
+    padding-top: 10px;
+}
+
 img {
     margin: 20px auto;
     max-width: 100%; 

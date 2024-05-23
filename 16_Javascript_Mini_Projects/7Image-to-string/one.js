@@ -8,6 +8,7 @@ function changeImage2String() {
         reader.readAsDataURL(fileImage);
         reader.addEventListener("load", () => {
             document.getElementById("abc").innerText = reader.result;
+            document.getElementById("displayText").style.display = "block";
         });
     }
 }
@@ -16,4 +17,8 @@ function str2image() {
     let imgstr = document.getElementById('abc').innerText;
     let img2 = document.getElementById("img1");
     img2.src = imgstr;
+}
+
+function displayImage() {
+    document.getElementById("img1").style.display = "block";
 }
