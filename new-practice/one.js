@@ -50,15 +50,63 @@
 // //     console.log(person[x])
 // // }
 
-let day;
-switch (new Date().getDay()) {
-    case 6:
-      text = "Today is Saturday";
-      break;
-    case 0:
-      text = "Today is Sunday";
-      break;
-    default:
-      text = "Looking forward to the Weekend";
-  }
-  console.log(text)
+
+/*Nested Arrays and Objects
+let x = "";
+const myObj = {
+    name: "John",
+    age: 30,
+    cars: [
+      {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+      {name:"BMW", models:["320", "44", "35"]},
+      {name:"Fiat", models:["500", "Panda"]}
+    ]
+}
+
+for (let i in myObj.cars){
+    x += "<h1>" + myObj.cars[i].name + "</h1>";
+    for (let j in myObj.cars[i].models){
+        x += myObj.cars[i].models[j];
+    }
+}
+console.log(x)
+document.getElementById('demo').innerHTML = x;*/
+
+// let text = ""
+// let i = 0;
+
+// do {
+//   text += "<br>The number is " + i;
+//   i++;
+// }
+// while (i < 10);  
+
+// document.getElementById("demo").innerHTML = text;
+
+// function getData(dataId){
+//   setTimeout(()=>{
+//     console.log('data',dataId);
+//   },2000)
+// }
+
+// getData(1);
+// getData(2);
+// getData(3)
+
+// function getsData(dataID,getNextData){
+//   setTimeout(()=>{
+//     console.log('data',dataID);
+//     if(getNextData){
+//       getNextData();
+//     }
+//   },2000)
+// }
+
+// getsData(1,()=>{
+//   getsData(2,()=>{
+//     getsData(3,()=>{
+//       getsData(4);
+//     })
+//   })
+// })
+
