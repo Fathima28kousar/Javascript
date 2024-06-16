@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="one.css"/>
+</head>
+<body>
+    <div class="calculator">
+        <form>
+            <div class="display">
+                <input type="text" name="display" id="display" disabled />
+            </div>
+            <div class="buttons">
+                <div>
+                    <input type="button" class="ac" value="AC" onclick="clearDisplay()"/>
+                    <input type="button" class="del" value="del"  onclick="deleteLastChar()"/>
+                    <input type="button" class="" value="."  onclick="appendToDisplay('.')"/>
+                    <input type="button" class="symbols" value="/"  onclick="appendToDisplay('/')"/>
+                </div>
+                <div>
+                    <input type="button" class="NumpadBtns" value="7" onclick="appendToDisplay('7')"/>
+                    <input type="button" class="NumpadBtns" value="8" onclick="appendToDisplay('8')"/>
+                    <input type="button" class="NumpadBtns" value="9" onclick="appendToDisplay('9')"/>
+                    <input type="button" class="symbols" value="*" onclick="appendToDisplay('*')"/>
+                </div>
+                <div>
+                    <input type="button" class="NumpadBtns" value="4" onclick="appendToDisplay('4')"/>
+                    <input type="button" class="NumpadBtns" value="5" onclick="appendToDisplay('5')"/>
+                    <input type="button" class="NumpadBtns" value="6" onclick="appendToDisplay('6')"/>
+                    <input type="button" class="symbols" value="-" onclick="appendToDisplay('-')"/>
+                </div>
+                <div>
+                    <input type="button" class="NumpadBtns" value="1" onclick="appendToDisplay('1')"/>
+                    <input type="button" class="NumpadBtns" value="2"  onclick="appendToDisplay('2')"/>
+                    <input type="button" class="NumpadBtns" value="3" onclick="appendToDisplay('3')"/>
+                    <input type="button" class="symbols" value="+" onclick="appendToDisplay('+')"/>
+                </div>
+                <div class="equality">
+                    <input type="button" class="special" value="00" onclick="appendToDisplay('00')"/>
+                    <input type="button" class="special" value="0" onclick="appendToDisplay('0')"/>
+                    <input type="button" class="equal" value="=" onclick="calculateResult()"/>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="one.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.hide {
+    display: none;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 60vmin;
+    width : 60vmin;
+    gap: 1.5vmin;
+}
+
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border: none;
+    border-radius: 1rem;
+    background-color: #FFFFFF;
+    color: #EF8354;
+    font-size: 9vmin;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+}

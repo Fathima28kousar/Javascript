@@ -128,8 +128,76 @@ promise1.then(res => {
     myDisplayer(err);
 });*/
 
-function myFunction(){
-    console.log('fathima kousaar');
+/*function api(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log('weather data');
+            resolve(200);
+        },2000)
+    })
 }
 
-setTimeout(myFunction,2000)
+async function getWeatherData(){
+    await api();
+    await api();
+    await api();
+}
+
+getWeatherData()*/
+
+/*function getData(dataId){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log('data',dataId);
+            resolve('success');
+        },2000);
+    })
+}
+
+async function getAllData(){
+    console.log('getting data1............');
+    await getData(1);
+    console.log('getting data2............');
+    await getData(2);
+    console.log('getting data3............');
+    await getData(3);
+    console.log('getting data4............');
+    await getData(4);
+}
+
+getAllData();*/
+
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+//       .then(response => response.json())
+//       .then(json => console.log(json))
+
+/*const para = document.getElementById('demo')
+const btn = document.getElementById('btn')
+
+const URL = 'https://fakestoreapi.com/products/1'
+let promise = fetch(URL)
+console.log(promise);
+
+const getFacts = async() => {
+    console.log('getting data...');
+    let response = await fetch(URL);
+    console.log(response);
+    let data = await response.json();
+    console.log(data);
+    para.innerText = data.description
+}
+btn.addEventListener("click",getFacts)
+// getFacts()*/
+
+/*async function myDisplay(){
+    let promise1 = new Promise((resolve) => {
+        setTimeout(()=>{
+            resolve('this is resolve object!');
+        },2000)
+    })
+    document.getElementById('demo').innerHTML = await promise1;
+    
+}
+
+myDisplay()*/
+
