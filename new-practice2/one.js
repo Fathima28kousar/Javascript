@@ -68,3 +68,4 @@ const getFacts = async() => {
     console.log(data[2].text)
 }
 getFacts()
+getFacts()
