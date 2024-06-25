@@ -54,18 +54,11 @@
 // }
 // getAllData()
 
-const url = "https://cat-fact.herokuapp.com/facts";
-// let promise = fetch(url);
-// console.log(promise)
-const getFacts = async() => {
-    console.log('getting data........');
-    let response = await fetch(url);
-    console.log(response);
-    console.log(response.status)
-    let data = await response.json();
-    console.log(data);
-    console.log(data[2]);
-    console.log(data[2].text)
+// ES6 rest parameter
+
+const a = 10;
+function add(){
+    let b = 100;
+   
 }
-getFacts()
-getFacts()
+add()
