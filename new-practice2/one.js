@@ -56,9 +56,16 @@
 
 // ES6 rest parameter
 
-const a = 10;
-function add(){
-    let b = 100;
-   
+message = 'very good good good good global';
+function hello(){
+    let message = 'Good morning';
+    {
+        let message = "Good Afternoon";
+        console.log('hello '+message)
+    }
+    console.log(message)
 }
-add()
+hello()
+hello()
+hello()
+hello()
