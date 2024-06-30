@@ -56,12 +56,34 @@
 
 // ES6 rest parameter
 
-function init() {
-    var name = "Mozilla"; // name is a local variable created by init
-    function displayName() {
-      // displayName() is the inner function, that forms the closure
-      console.log(name); // use variable declared in the parent function
+
+// function init(){ //However, since inner functions have access to the variables of outer functions, displayName() can access the variable name declared in the parent function, init().
+//     const name = 'fathima'
+//     function displayName(){
+//         console.log(name)
+//     }
+//     displayName()
+// }
+// init()
+
+// Outer function
+// Outer function
+function outer() {
+    function create_Closure(val) {
+        return function () {
+            return val;
+        }
     }
-    displayName();
-  }
-  init();//Nested functions have access to variables declared in their outer scope.
+    let arr = [];
+    let i;
+    for (i = 0; i < 4; i++) {
+        arr[i] = create_Closure(i);
+    }
+    return arr;
+}
+let get_arr = outer();
+console.log(get_arr[0]());
+console.log(get_arr[1]());
+console.log(get_arr[2]());
+console.log(get_arr[3]());
+  
