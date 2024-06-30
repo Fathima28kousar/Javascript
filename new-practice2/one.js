@@ -56,16 +56,12 @@
 
 // ES6 rest parameter
 
-message = 'very good good good good global';
-function hello(){
-    let message = 'Good morning';
-    {
-        let message = "Good Afternoon";
-        console.log('hello '+message)
+function init() {
+    var name = "Mozilla"; // name is a local variable created by init
+    function displayName() {
+      // displayName() is the inner function, that forms the closure
+      console.log(name); // use variable declared in the parent function
     }
-    console.log(message)
-}
-hello()
-hello()
-hello()
-hello()
+    displayName();
+  }
+  init();//Nested functions have access to variables declared in their outer scope.
