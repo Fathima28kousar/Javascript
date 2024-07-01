@@ -66,24 +66,47 @@
 // }
 // init()
 
-// Outer function
-// Outer function
-function outer() {
-    function create_Closure(val) {
-        return function () {
-            return val;
-        }
+// let a = 10;
+// function outerfunc(){
+//     let b = a;
+//     console.log(a);
+//     console.log(b);
+//     function inner(){
+//         let c = b;
+//         console.log(c);
+//         inner2()        
+//         function inner2(){
+//             c = 30
+//             console.log(c)
+//         }
+//     }
+//     inner()
+// }
+// outerfunc
+
+// function p(a){
+//     var len = a.length, i=0;
+//     if (len ==0 ){
+//         console.log('empty')
+//     }
+//     else{
+//         do{
+//             console.log(a[i])
+//         }while(++i<len)
+//     }
+// }
+// p([1,2,3])
+function main() {
+    try {
+      const arr = [1, 2, 3, 5];
+      arr.forEach((num) => {
+        console.log(parseInt(num / (num - 3)));
+      });
+    } catch (e) {
+      console.log(e);
     }
-    let arr = [];
-    let i;
-    for (i = 0; i < 4; i++) {
-        arr[i] = create_Closure(i);
-    }
-    return arr;
-}
-let get_arr = outer();
-console.log(get_arr[0]());
-console.log(get_arr[1]());
-console.log(get_arr[2]());
-console.log(get_arr[3]());
+  }
   
+main();
+
+
