@@ -96,17 +96,17 @@
 //     }
 // }
 // p([1,2,3])
-function main() {
-    try {
-      const arr = [1, 2, 3, 5];
-      arr.forEach((num) => {
-        console.log(parseInt(num / (num - 3)));
-      });
-    } catch (e) {
-      console.log(e);
-    }
-  }
+// function main() {
+//     try {
+//       const arr = [1, 2, 3, 5];
+//       arr.forEach((num) => {
+//         console.log(parseInt(num / (num - 3)));
+//       });
+//     } catch (e) {
+//       console.log(e);
+//     }
+//   }
   
-main();
+// main();
 
 
